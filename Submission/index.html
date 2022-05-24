@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/app.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+      <div class="col-md-12 jumbotron text-center" style = 'background-color: coral' >
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use filters on the left to filter through test subjects. Then interact with the charts to know more about the subject's belly button biodiversity.</p>
+      </div>
+    </div>
+
+    <div class="row">
+    <div class="container">
+      <div class="col-md-2">
+      <div class="row-md-6">
+        <br>
+        <br>
+        <div class="card border-primary" style="max-width: 20rem;">
+          <h4>Test Subject ID No.:</h4>
+          <select id="analysisData"></select>
+        </div>
+      </div>
+      <br>
+      <div class="row-md-6">
+        <div class="card border-primary mb-3" style="max-width: 20rem;" >
+          <div class="card-header" id = 'title' style = 'background-color: rgb(202, 85, 100)'>Demographic Info</div>
+          <div class="card-body">
+            <p id="sample-metadata" class="card-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+ 
+</body>
+
+</html>
